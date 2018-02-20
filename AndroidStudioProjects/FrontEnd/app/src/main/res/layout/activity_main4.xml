@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="vertical"
+android:background="@color/colorPrimary"
+tools:context="com.main.sai.frontend.Main4Activity"
+    android:weightSum="1">
+
+<TextView
+    android:id="@+id/text_view_id"
+    android:layout_height="wrap_content"
+    android:layout_width="wrap_content"
+    android:text="OPTIONAL DETAILS"
+    android:textSize="20dp"
+    android:paddingLeft="17dp"
+    android:layout_gravity="left"
+    android:layout_marginTop="5dp"/>
+
+<Switch
+    android:id="@+id/sadhana_switch"
+    android:layout_width="304dp"
+    android:layout_height="wrap_content"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentTop="true"
+    android:layout_marginLeft="40dp"
+    android:layout_marginTop="20dp"
+    android:textSize="20dp"
+    android:text="Previous Sadhana Camp?"
+    android:layout_weight="0.03" />
+<Switch
+    android:id="@+id/yatra_switch"
+    android:layout_width="305dp"
+    android:layout_height="wrap_content"
+    android:layout_alignParentRight="true"
+    android:layout_alignParentTop="true"
+    android:layout_marginLeft="40dp"
+    android:layout_marginTop="10dp"
+    android:textSize="20dp"
+    android:text="Parthi yatra?"
+    />
+<Switch
+    android:id="@+id/guru_switch"
+    android:layout_width="305dp"
+    android:layout_height="wrap_content"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentTop="true"
+    android:layout_marginLeft="40dp"
+    android:layout_marginTop="10dp"
+    android:textSize="20dp"
+    android:text="Balvikas Guru?"
+    />
+<Switch
+    android:id="@+id/stud_switch"
+    android:layout_width="305dp"
+    android:layout_height="wrap_content"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentTop="true"
+    android:layout_marginLeft="40dp"
+    android:layout_marginTop="10dp"
+    android:textSize="20dp"
+    android:text="Current/Old Balvikas student?"
+    android:layout_weight="0.01" />
+
+    <EditText
+        android:id="@+id/comment"
+        android:layout_width="291dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/border_style"
+        android:hint="Comments"
+        android:paddingLeft="5dp"
+        android:textAlignment="gravity"
+        android:layout_weight="0.27" />
+
+    <Button
+    android:layout_width="130dp"
+    android:layout_height="wrap_content"
+    android:text="Register"
+        android:layout_marginTop="15dp"
+    android:layout_gravity="center_horizontal"
+    android:onClick="userReg" />
+
+</LinearLayout>

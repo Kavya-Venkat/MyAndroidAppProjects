@@ -1,0 +1,599 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/default_color"
+    android:padding="10dp"
+    android:fillViewport="false"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <TextView
+
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="PERSONAL DETAILS"
+            android:textSize="20dp"
+            android:paddingLeft="17dp"
+            android:layout_gravity="left"
+            android:layout_marginTop="5dp"/>
+        <EditText
+            android:layout_width="285dp"
+            android:layout_height="wrap_content"
+            android:hint="First Name"
+            android:id="@+id/fname"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            />
+        <EditText
+            android:layout_width="285dp"
+            android:layout_height="wrap_content"
+            android:hint="Last Name"
+            android:id="@+id/lname"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            />
+
+
+        <EditText
+            android:layout_width="285dp"
+            android:layout_height="wrap_content"
+            android:hint="Mobile Phone"
+            android:id="@+id/mobnum"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            android:inputType="number"
+            />
+        <EditText
+            android:layout_width="285dp"
+            android:layout_height="wrap_content"
+            android:hint="Email Address"
+            android:id="@+id/email"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            android:inputType="textEmailAddress"
+            />
+
+        <TextView
+
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="POSTAL DETAILS"
+            android:textSize="20dp"
+            android:paddingLeft="17dp"
+            android:layout_gravity="left"
+            android:layout_marginTop="5dp"/>
+        <EditText
+            android:layout_width="285dp"
+            android:layout_height="100dp"
+            android:hint="Address"
+            android:id="@+id/addr"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="5dp"
+            android:paddingLeft="5dp"
+            android:inputType="textPostalAddress"
+            android:background="@drawable/border_style"
+
+            />
+
+        <EditText
+            android:id="@+id/city"
+            android:layout_width="285dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            android:hint="City" />
+
+
+        <TextView
+            android:id="@+id/text_view_id"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="SAMITHI DETAILS"
+            android:textSize="20dp"
+            android:paddingLeft="17dp"
+            android:layout_gravity="left"
+            android:layout_marginTop="15dp"/>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginTop="15dp"
+                android:gravity="bottom"
+                android:weightSum="1">
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="35dp"
+                    android:layout_marginTop="30dp"
+                    android:hint="State"
+                    android:textSize="20dp" />
+
+                <Spinner
+                    android:id="@+id/state_spinner"
+                    android:layout_width="fill_parent"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginLeft="35dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:entries="@array/state_arrays"
+                    android:textAlignment="textEnd"
+
+                    />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+
+                android:gravity="bottom"
+                android:weightSum="1">
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="35dp"
+                    android:layout_marginTop="30dp"
+                    android:hint="District"
+                    android:textSize="20dp" />
+
+                <Spinner
+                    android:id="@+id/dist_spinner"
+                    android:layout_width="fill_parent"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginLeft="35dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:entries="@array/district_arrays"
+                    android:textAlignment="textEnd"
+
+                    />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+
+                android:gravity="bottom"
+                android:weightSum="1">
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="35dp"
+                    android:layout_marginTop="30dp"
+                    android:hint="Samithi"
+                    android:textSize="20dp" />
+
+                <Spinner
+                    android:id="@+id/samithi_spinner"
+                    android:layout_width="fill_parent"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginLeft="35dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:entries="@array/samithi_arrays"
+                    android:textAlignment="textEnd"
+
+                    />
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="OTHER DETAILS"
+            android:textSize="20dp"
+            android:paddingLeft="17dp"
+            android:layout_gravity="left"
+            />
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginTop="15dp"
+                android:gravity="bottom"
+                android:weightSum="1">
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="35dp"
+                    android:layout_marginTop="30dp"
+                    android:hint="Gender"
+                    android:textSize="20dp" />
+
+                <Spinner
+                    android:id="@+id/gender_spinner"
+                    android:layout_width="fill_parent"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginLeft="35dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:entries="@array/gender_arrays"
+                    android:textAlignment="textEnd"
+
+                    />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+
+                android:gravity="bottom"
+                android:weightSum="1">
+
+                <TextView
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="35dp"
+                    android:layout_marginTop="30dp"
+                    android:hint="Education"
+                    android:textSize="20dp" />
+
+                <Spinner
+                    android:id="@+id/education_spinner"
+                    android:layout_width="fill_parent"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginLeft="35dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:entries="@array/education_arrays"
+                    android:textAlignment="textEnd"
+
+                    />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+
+                android:gravity="bottom"
+                android:weightSum="1">
+
+                <TextView
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="35dp"
+                    android:layout_marginTop="30dp"
+                    android:hint="Occupation"
+                    android:textSize="20dp" />
+
+                <Spinner
+                    android:id="@+id/occupation_spinner"
+                    android:layout_width="fill_parent"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginLeft="35dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:entries="@array/occup_arrays"
+                    android:textAlignment="textEnd"
+
+                    />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical"
+            >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:gravity="bottom"
+
+                android:weightSum="1">
+
+                <TextView
+                    android:layout_width="145dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="35dp"
+                    android:layout_marginTop="30dp"
+                    android:hint="Marital Status"
+                    android:textSize="20dp" />
+
+                <Spinner
+                    android:id="@+id/marital_spinner"
+                    android:layout_width="fill_parent"
+                    android:layout_height="34dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginLeft="35dp"
+                    android:layout_gravity="center_horizontal"
+
+                    android:layout_marginTop="15dp"
+                    android:entries="@array/marital_arrays"
+                    android:textAlignment="center"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="55dp"
+                android:layout_marginTop="10dp"
+                android:weightSum="1">
+                <TextView
+                    android:layout_width="145dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="40dp"
+                    android:textSize="20dp"
+                    android:text="Age"
+
+                    />
+
+                <EditText
+                    android:id="@+id/age_spinner"
+                    android:layout_width="80dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="50dp"
+                    android:background="@drawable/border_style"
+                    android:inputType="number"
+                    android:textAlignment="center"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="Areas Of Interest"
+            android:textSize="20dp"
+            android:paddingLeft="40dp"
+            android:layout_gravity="left"
+            />
+       <!-- <ListView
+            android:id="@+id/checkable_list"
+            android:layout_width="296dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/border_style"
+            android:nestedScrollingEnabled="true"
+
+            >
+        </ListView>-->
+    <LinearLayout
+            android:layout_width="285dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/border_style"
+            android:layout_marginTop="15dp"
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical">
+
+        <CheckBox
+            android:id="@+id/chkIT"
+            android:layout_width="305dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="10dp"
+            android:textSize="20dp"
+            android:text="Information Technology"
+            android:hint="IT"/>
+
+        <CheckBox
+            android:id="@+id/chkVC"
+            android:layout_width="305dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="10dp"
+            android:textSize="20dp"
+            android:text="Veda Chanting"
+             />
+
+        <CheckBox
+            android:id="@+id/chkBH"
+            android:layout_width="305dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="10dp"
+            android:textSize="20dp"
+            android:text="Bhajan" />
+
+        <CheckBox
+            android:id="@+id/chkGM"
+            android:layout_width="305dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="10dp"
+            android:textSize="20dp"
+            android:text="Gram Seva" />
+
+        <CheckBox
+            android:id="@+id/chkMC"
+            android:layout_width="305dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="10dp"
+            android:textSize="20dp"
+            android:text="Medical Camp" />
+
+        <CheckBox
+            android:id="@+id/chkBV"
+            android:layout_width="305dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="10dp"
+            android:textSize="20dp"
+            android:text="Balvikas" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginTop="5dp"
+                android:weightSum="1">
+                <TextView
+
+                    android:layout_width="145dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:layout_marginLeft="40dp"
+
+                    android:hint="Other Interests"
+                    android:textSize="20dp"
+                    />
+                <EditText
+                    android:id="@+id/other_interest"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="65dp" />
+
+            </LinearLayout></LinearLayout>
+
+        <TextView
+
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="OPTIONAL DETAILS"
+            android:textSize="20dp"
+            android:paddingLeft="17dp"
+            android:layout_gravity="left"
+            android:layout_marginTop="15dp"/>
+
+        <Switch
+            android:id="@+id/sadhana_switch"
+            android:layout_width="304dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="20dp"
+            android:textSize="20dp"
+            android:text="Previous Sadhana Camp?"
+            android:layout_weight="0.03" />
+        <Switch
+            android:id="@+id/yatra_switch"
+            android:layout_width="305dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="10dp"
+            android:textSize="20dp"
+            android:text="Parthi yatra?"
+            />
+        <Switch
+            android:id="@+id/guru_switch"
+            android:layout_width="305dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="10dp"
+            android:textSize="20dp"
+            android:text="Balvikas Guru?"
+            />
+        <Switch
+            android:id="@+id/stud_switch"
+            android:layout_width="305dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="10dp"
+            android:textSize="20dp"
+            android:text="Current/Old Balvikas student?"
+            android:layout_weight="0.01" />
+
+        <EditText
+            android:id="@+id/comment"
+            android:layout_width="291dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/border_style"
+            android:hint="Comments"
+            android:paddingLeft="5dp"
+            android:textAlignment="gravity"
+            android:layout_weight="0.27" />
+
+        <Button
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:text="Register"
+            android:layout_marginTop="15dp"
+            android:layout_gravity="center_horizontal"
+            android:onClick="userReg" />
+
+
+
+</LinearLayout>
+</ScrollView>

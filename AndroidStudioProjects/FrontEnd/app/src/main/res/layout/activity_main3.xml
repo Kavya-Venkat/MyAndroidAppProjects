@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorPrimary"
+    tools:context="com.main.sai.frontend.Main3Activity">
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="vertical"
+         >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="bottom"
+
+            android:weightSum="1">
+
+            <TextView
+                android:layout_width="145dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="10dp"
+                android:hint="Marital Status"
+                android:textSize="20dp" />
+
+            <Spinner
+                android:id="@+id/marital_spinner"
+                android:layout_width="fill_parent"
+                android:layout_height="34dp"
+                android:layout_marginLeft="50dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginRight="25dp"
+                android:layout_marginTop="15dp"
+                android:entries="@array/marital_arrays"
+                android:textAlignment="center"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="10dp"
+            android:weightSum="1">
+            <TextView
+                android:layout_width="145dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="40dp"
+                android:text="Age"
+                android:textSize="20dp"
+                />
+
+            <EditText
+                android:id="@+id/age_spinner"
+                android:layout_width="80dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="65dp"
+                android:background="@drawable/border_style"
+                android:inputType="number"
+                android:textAlignment="center"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="Areas Of Interest"
+        android:textSize="20dp"
+        android:paddingLeft="40dp"
+        android:layout_gravity="left"
+        />
+    <ListView
+        android:id="@+id/checkable_list"
+        android:layout_width="296dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"
+        android:background="@drawable/border_style"
+        android:nestedScrollingEnabled="true"
+        >
+    </ListView>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="5dp"
+            android:weightSum="1">
+    <TextView
+
+        android:layout_width="145dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginLeft="40dp"
+        android:hint="Other Interests"
+        android:textSize="20dp"
+        />
+    <EditText
+        android:id="@+id/other_interest"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="65dp" />
+
+</LinearLayout></LinearLayout>
+    <Button
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:text="Next"
+        android:layout_gravity="center_horizontal"
+        android:onClick="onNext"
+        />
+
+</LinearLayout>

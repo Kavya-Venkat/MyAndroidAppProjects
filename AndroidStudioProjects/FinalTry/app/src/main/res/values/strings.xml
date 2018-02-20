@@ -1,0 +1,71 @@
+<resources>
+    <string name="app_name">SWAMI</string>
+
+    <string-array name="marital_arrays">
+        <item>Single</item>
+        <item>Married</item>
+        <item>NotApplicable</item>
+    </string-array>
+    <string-array name="state_arrays">
+        <item>TamilNadu</item>
+        <item>Karnataka</item>
+        <item>Kerala</item>
+        <item>Andhra Pradesh</item>
+    </string-array>
+    <string-array name="district_arrays">
+        <item>Erode</item>
+        <item>Coimbatore</item>
+        <item>Trichy</item>
+        <item>Chennai</item>
+        <item>Puttaparthi</item>
+        <item>Bangalore</item>
+        <item>Salem</item>
+    </string-array>
+    <string-array name="samithi_arrays">
+        <item>Arasurpudur</item>
+        <item>Bhavani</item>
+        <item>Chithode</item>
+        <item>Choolai</item>
+        <item>Dharapuram</item>
+        <item>Erode East</item>
+        <item>Gandhinagar</item>
+        <item>Gobi</item>
+        <item>Kadaganalli</item>
+        <item>Kangeyam</item>
+        <item>Kavidapadi</item>
+        <item>Kovilnatham</item>
+        <item>Kovundanpudur</item>
+        <item>Moolapalayam</item>
+        <item>Nanjagounden Palayam</item>
+        <item>Palayapalayam</item>
+        <item>Pavalakuttai</item>
+        <item>Perundurai</item>
+        <item>Ponnisugars</item>
+        <item>Pudukothukadu</item>
+        <item>Sathyamangalam</item>
+        <item>Terkkupallam</item>
+        <item>Thairpalayam</item>
+        <item>Thirunagar Colony</item>
+        <item>Vellakoil</item>
+    </string-array>
+    <string-array name="gender_arrays">
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
+    <string-array name="education_arrays">
+        <item>Graduate</item>
+        <item>Professional</item>
+        <item>NotApplicable</item>
+        <item>Below 10th</item>
+        <item>10-12th</item>
+        <item>Post Graduate</item>
+    </string-array>
+    <string-array name="occup_arrays">
+        <item>Engineer</item>
+        <item>HouseWife</item>
+        <item>NotApplicable</item>
+        <item>Business</item>
+        <item>Teacher</item>
+    </string-array>
+
+</resources>

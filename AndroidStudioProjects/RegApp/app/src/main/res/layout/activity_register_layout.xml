@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorPrimary"
+    tools:context="com.main.sai.regapp.Register">
+
+
+    <EditText
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:hint="First Name"
+        android:id="@+id/fname"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="0dp"
+        />
+    <EditText
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:hint="Last Name"
+        android:id="@+id/lname"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="0dp"
+        />
+    <EditText
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:hint="Address"
+        android:id="@+id/addr"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="0dp"
+        android:inputType="textPostalAddress"
+        />
+    <EditText
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:hint="City"
+        android:id="@+id/city"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="0dp"
+        />
+    <EditText
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:hint="District"
+        android:id="@+id/dist"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="0dp"
+        />
+    <EditText
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:hint="State"
+        android:id="@+id/state"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="0dp"
+        />
+
+
+    <EditText
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:hint="Home Phone"
+        android:id="@+id/homenum"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="0dp"
+        android:inputType="number"
+        />
+    <EditText
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:hint="Mobile Phone"
+        android:id="@+id/mobnum"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="0dp"
+        android:inputType="number"
+        />
+    <EditText
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:hint="Email Id"
+        android:id="@+id/mailid"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="0dp"
+        android:inputType="textEmailAddress"
+        />
+
+    <EditText
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:hint="Education"
+        android:id="@+id/edu"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="0dp"
+        />
+
+
+    <Button
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:text="Register"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="0dp"
+        android:onClick="userReg"
+        />
+
+</LinearLayout>
+ <!--   https://www.mkyong.com/android/android-checkbox-example/-->

@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorPrimary"
+    tools:context="com.main.sai.frontend.Main2Activity">
+
+    <TextView
+        android:id="@+id/text_view_id"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="SAMITHI DETAILS"
+        android:textSize="20dp"
+        android:paddingLeft="17dp"
+        android:layout_gravity="left"
+        android:layout_marginTop="15dp"/>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="15dp"
+            android:gravity="bottom"
+            android:weightSum="1">
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="30dp"
+                android:hint="State"
+                android:textSize="20dp" />
+
+            <Spinner
+                android:id="@+id/state_spinner"
+                android:layout_width="fill_parent"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="45dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:entries="@array/state_arrays"
+                android:textAlignment="center"
+
+                />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+
+            android:gravity="bottom"
+            android:weightSum="1">
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="30dp"
+                android:hint="District"
+                android:textSize="20dp" />
+
+            <Spinner
+                android:id="@+id/dist_spinner"
+                android:layout_width="fill_parent"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="45dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:entries="@array/district_arrays"
+                android:textAlignment="center"
+
+                />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+
+            android:gravity="bottom"
+            android:weightSum="1">
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="30dp"
+                android:hint="Samithi"
+                android:textSize="20dp" />
+
+            <Spinner
+                android:id="@+id/samithi_spinner"
+                android:layout_width="fill_parent"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="45dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:entries="@array/samithi_arrays"
+                android:textAlignment="center"
+
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="OTHER DETAILS"
+        android:textSize="20dp"
+        android:paddingLeft="17dp"
+        android:layout_gravity="left"
+        />
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="15dp"
+            android:gravity="bottom"
+            android:weightSum="1">
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="30dp"
+                android:hint="Gender"
+                android:textSize="20dp" />
+
+            <Spinner
+                android:id="@+id/gender_spinner"
+                android:layout_width="fill_parent"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="45dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:entries="@array/gender_arrays"
+                android:textAlignment="center"
+
+                />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+
+            android:gravity="bottom"
+            android:weightSum="1">
+
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="30dp"
+                android:hint="Education"
+                android:textSize="20dp" />
+
+            <Spinner
+                android:id="@+id/education_spinner"
+                android:layout_width="fill_parent"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="45dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:entries="@array/education_arrays"
+                android:textAlignment="center"
+
+                />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+
+            android:gravity="bottom"
+            android:weightSum="1">
+
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="30dp"
+                android:hint="Occupation"
+                android:textSize="20dp" />
+
+            <Spinner
+                android:id="@+id/occupation_spinner"
+                android:layout_width="fill_parent"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="45dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:entries="@array/occup_arrays"
+                android:textAlignment="center"
+
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <Button
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:text="Next"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="15dp"
+        android:onClick="onNext"
+        />
+</LinearLayout>

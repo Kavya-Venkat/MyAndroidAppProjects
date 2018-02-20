@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html ng-app>
+<head>
+    <script src="angular.js"></script>
+    <title>Document</title>
+</head>
+<body ng-init="hour=10">
+    <p ng-if="hour>17">eve</p>
+    <p ng-if="hour<=10">morn</p>
+    <p> hour of the day : {{hour}}</p>
+    <p ng-bind="hour"></p>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">FrontEnd</string>
+
+    <string-array name="marital_arrays">
+        <item>Single</item>
+        <item>Married</item>
+        <item>Not Applicable</item>
+    </string-array>
+    <string-array name="state_arrays">
+        <item>TamilNadu</item>
+        <item>Karnataka</item>
+        <item>Kerala</item>
+    </string-array>
+    <string-array name="district_arrays">
+        <item>Erode</item>
+        <item>Coimbatore</item>
+        <item>Trichy</item>
+        <item>Chennai</item>
+    </string-array>
+    <string-array name="samithi_arrays">
+        <item>Palayapalayam</item>
+        <item>Erode East</item>
+        <item>Moolapalayam</item>
+        <item>Soolai</item>
+    </string-array>
+    <string-array name="gender_arrays">
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
+    <string-array name="education_arrays">
+        <item>Graduate</item>
+        <item>Professional</item>
+        <item>Not Applicable</item>
+    </string-array>
+    <string-array name="occup_arrays">
+        <item>Engineer</item>
+        <item>HouseWife</item>
+        <item>Not Applicable</item>
+        <item>Business</item>
+    </string-array>
+
+</resources>

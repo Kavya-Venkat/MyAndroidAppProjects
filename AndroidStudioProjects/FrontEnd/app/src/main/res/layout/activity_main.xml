@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorPrimary"
+    tools:context="com.main.sai.frontend.MainActivity">
+
+    <TextView
+        android:id="@+id/text_view_id"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="PERSONAL DETAILS"
+        android:textSize="20dp"
+        android:paddingLeft="17dp"
+        android:layout_gravity="left"
+        android:layout_marginTop="5dp"/>
+    <EditText
+        android:layout_width="285dp"
+        android:layout_height="wrap_content"
+        android:hint="First Name"
+        android:id="@+id/fname"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="5dp"
+        />
+    <EditText
+        android:layout_width="285dp"
+        android:layout_height="wrap_content"
+        android:hint="Last Name"
+        android:id="@+id/lname"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="5dp"
+        />
+
+
+    <EditText
+        android:layout_width="285dp"
+        android:layout_height="wrap_content"
+        android:hint="Mobile Phone"
+        android:id="@+id/mobnum"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="5dp"
+        android:inputType="number"
+        />
+    <EditText
+        android:layout_width="285dp"
+        android:layout_height="wrap_content"
+        android:hint="Email Address"
+        android:id="@+id/email"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="5dp"
+        android:inputType="textEmailAddress"
+        />
+
+    <TextView
+
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="POSTAL DETAILS"
+        android:textSize="20dp"
+        android:paddingLeft="17dp"
+        android:layout_gravity="left"
+        android:layout_marginTop="5dp"/>
+    <EditText
+        android:layout_width="285dp"
+        android:layout_height="100dp"
+        android:hint="Address"
+        android:id="@+id/addr"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="5dp"
+        android:paddingLeft="5dp"
+        android:inputType="textPostalAddress"
+        android:background="@drawable/border_style"
+
+        />
+
+    <EditText
+        android:id="@+id/city"
+        android:layout_width="285dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="5dp"
+        android:hint="City" />
+
+    <Button
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:text="Next"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/next"
+
+        android:onClick="onNext"
+        />
+</LinearLayout>
