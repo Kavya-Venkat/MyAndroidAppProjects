@@ -1,0 +1,8 @@
+{
+  "name": "saione",
+  "app_id": "c1653e78",
+  "type": "ionic-angular",
+  "integrations": {
+    "cordova": {}
+  }
+}

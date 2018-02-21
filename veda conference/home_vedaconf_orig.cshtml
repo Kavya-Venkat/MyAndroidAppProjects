@@ -1,0 +1,135 @@
+@using System;
+@using System.Collections.Generic;
+@using System.Web;
+
+@{
+    var request = HttpContext.Current.Request;
+    var response = HttpContext.Current.Response;
+    if(request.QueryString["data"] == "1") 
+    {
+        string result = VedaConf2017.GetData(request);
+        response.Write(result);
+        response.End();
+    } 
+    else if(request.QueryString["download"] == "csv") 
+    {
+        string result = VedaConf2017.DownloadCSV();
+        
+        Response.AddHeader("Content-Disposition", "attachment;filename=vedaconf2017.csv");
+        response.Write(result);
+        response.End();    
+    }
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Sai One Admin Portal</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="/bs/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="/bs/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+    <link href="/bs/css/dataTables.min.css" rel="stylesheet" />
+    <!-- Custom styles for this template -->
+    <link href="/bs/css/dashboard.css" rel="stylesheet">
+    <link href="/bs/css/custom.css" rel="stylesheet">
+    <link href="/bs/css/bsNavbarColor.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+	<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+	<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+
+    <script src="/bs/js/jquery.min.js"></script>
+    <script src="/bs/js/bootstrap.min.js"></script>
+    <script src="/bs/js/dataTables.min.js"></script>
+
+</head>
+<body>
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">
+                    <img src="/bs/images/lord1-30x30.jpg" width="30" height="30" alt="">
+                </a>
+                <a class="navbar-brand" href="#">Sai One Admin Portal<sup>beta</sup></a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="active" id="dashboard">
+                        <a href="#">
+                            <span class="glyphicon glyphicon-home"></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://ssssoindia.freshdesk.com/support/tickets/new" target="_blank">Support <span class="glyphicon glyphicon-phone-alt"></span></a>
+                    </li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                            <span>@Request.Cookies["login"].Value</span>
+                            <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="/login/login.asp">Logout <span class="glyphicon glyphicon-log-out"></span></a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="col-sm-3 col-md-2 sidebar">
+        <ul class="nav nav-sidebar sidebar-submenu">
+            <li class="menuBar active"><a href="#">Dashboard</a></li>
+        </ul>
+    </div>
+    
+    <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+		<h1 class="page-header">Registered Members</h1>	
+    
+        <div id="tbl"></div>
+
+        <span>Download:</span>
+
+        <span class="btn-group">
+            <a href="home.cshtml?download=csv" class="btn btn-info" role="button">CSV</a>
+        </span>
+    </div>
+
+
+</body>
+</html>
+
+<script>
+   $(document).ready(function () {
+     
+        $("#tbl").load("home.cshtml?data=1", function() {
+            $('#tbl .dtTbl').DataTable({
+                'processing': true,
+                'serverSide': true,
+                'ajax': {
+                    'url': $('#tbl .dtTbl').attr('data-url'),
+                    'type': 'POST',
+                }
+            });
+        });
+    
+    });
+
+</script>

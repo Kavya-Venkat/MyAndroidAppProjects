@@ -1,0 +1,59 @@
+<style>
+    .item-textAreaborder {
+        border: 1px solid;
+        border-top-left-radius: 15px;
+        height: 200px;
+        width: 300px;
+        padding: 10px;
+    }
+    .item-select select {
+        max-width: 100%;
+    }
+</style>
+
+
+<ion-view hide-nav-bar="false" id="page29">
+    <ion-header-bar class="bar bar-subheader">						
+		<h4 class="title" style="color:#000000;text-align:center;">Swachata Se Divyata Tak</h4>	
+    </ion-header-bar>
+    <ion-content padding="true">
+        <div>
+            <h6>Following details will be uploaded:</h6>
+        </div>
+    <form id="treeupload-form" class="list">
+      <ion-list id="treeupload-list">
+        <label class="item item-input">
+          <span class="input-label">Name</span>
+          <input type="text" placeholder="" ng-disabled="noteditable" id="FullName" ng-model="header.FullName" name="FullName" required>
+        </label>
+        <label class="item item-input">
+          <span class="input-label">Phone</span>
+          <input type="text" placeholder="" ng-disabled="noteditable" id="MobilePhone" ng-model="header.MobilePhone" name="MobilePhone" required>
+        </label>
+        <label class="item item-input">
+          <span class="input-label">Email</span>
+          <input type="text" placeholder="" ng-disabled="noteditable" id="EmailAddress" ng-model="header.EmailAddress" name="EmailAddress" required>
+        </label>
+        <!-- <label class="item item-input">
+          <span class="input-label">*Number of trees planted</span>
+          <input type="number" placeholder="" id="TreeNumber" ng-model="header.TreeNumber" ng-disabled="header.loading" name="TreeNumber" required min="0" max="100" step="1">
+        </label> -->
+        <label class="item item-input" style="width: auto; height: auto;">
+          <span class="input-label">Comments</span>
+          <textarea id="Comment"  ng-model="header.Comment" style="width: 100%; height:50px;" ng-disabled="header.loading" class="text-input text-input-ios ng-valid ng-touched ng-dirty"  maxlength="200"
+          autocomplete="off" autocorrect="off" placeholder="">
+        </textarea> 
+        </label>
+
+        <duv class="item item-input" style="display: inline-block; width: 100%;">
+            <div>Upload</div>
+            <img ng-if="header.photo1" ng-src="{{header.photo1}}" alt="Uploaded photo 1"  style="display: block;width:100%; margin-top: 10px; border-width:1px; border-color:#FFFFFF;">
+            <input type="button" class="upload-button-selector button outlinedbutton buttoncolor" ng-disabled="header.loading" ng-click="actions.selectPhoto('C')" value="Open Camera"/> 
+            <input type="button" class="upload-button-selector button outlinedbutton buttoncolor" ng-disabled="header.loading" ng-click="actions.selectPhoto('G')" value="Upload from Gallery"/> 
+        </div>
+      </ion-list>
+      <a  ng-if="!header.loading" id="treeupload-submit" ng-click="actions.Validate()" class="button button-positive button-block">Submit</a>
+      <a  ng-if="header.loading" id="treeupload-submit-inprogress" ng-disabled="header.loading" class="button button-positive button-block">Submitting......</a>     
+    </form>       
+    </ion-content>
+</ion-view>

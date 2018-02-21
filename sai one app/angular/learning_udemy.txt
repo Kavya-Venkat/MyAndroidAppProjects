@@ -1,0 +1,57 @@
+e2e--end to end tests - automated tests which simulate real users->fill a form,route to a browser.
+node_modules - store 3rd party lib which app ll depend on...libs are bundled and deployed
+app - ---module & component
+assests - store static assests(images,icons,txts)
+env - config setting for diff env(prod,dev)
+faviocn-icon on browser
+main.ts - starting pt of app (like main method) - bootstrapping the main module of app -angular loads this module and from there starts other
+polyfills-features of js angular needs and features of current browser
+test.ts ---for setting up testing env
+angular-cli.json
+editorconfig - for team env, all team members use same settings in their editors
+gitignore - exclude files from git
+karma.config ---karma(test runner of javascript code)
+package.json -----every node proj has --dependencies(libraries-angular) ---devdependencies -lib for developing appln
+protractor.conf.js ---tool to run e2e tests
+tsconfig - typescript compiler ->compiles typescript to javascript which browser can understand
+tslint - checks typescript for maintainabilit,fucn errors
+
+
+
+Lecture 7
+webpack - build automation tool (gets all scripts and css,combines,puts in bundle and minifies them(polyfills,main,styles,vendor,inline)--vendor.bundle(3rd party bundle)
+any change webpack automtically recompiles and bundles - HMR(Hot Module Replacement) -automatically refershes the browser
+It injects the bundles in run time into index.html
+
+Lecture 8
+Anguler JS(JS framework)-> adding new features+typescript to reduce complexity(Angular 2)-so new framework --->Angular 4(just for version conflicts)----->Angular
+
+Lecture 12 -Typescript Fundamentals
+Typescript->superscript of JS(Features->strong/static typing(type of object must be specified)
+---OPS features(classes,interfaces)
+---catch errors during compile time rather tan run time
+---tools
+
+compile(transpile) TS code to ES5 JS code(TS compiler--tsc does to make the browsers understand)
+
+Lecture 14
+npm install -g typescript
+tsc --version
+
+JS(ECMASCRIPT 5)---Supported by all browsers
+ES6,es2015,ES2016,ES2017
+
+declare variables
+var a=1; (available anywhere inside the method)
+let a=1; (not here-same like java)--advisable can catch erros in compile time
+
+No let keyword in JS, so tsc compiles let keyword,but in JS -> its var keyword
+
+Lecture16
+change type of var on the fly --in JS
+But not in typescript..
+
+
+in ts-each file is a module
+
+ 

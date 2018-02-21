@@ -1,0 +1,46 @@
+<LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="5dp"
+            android:gravity="bottom" >
+
+            <EditText
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:hint="Dist"
+                android:id="@+id/dist"
+                android:layout_gravity="left"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="70dp"
+                android:background="@android:drawable/btn_dropdown"
+                />
+
+            <EditText
+                android:layout_width="125dp"
+                android:layout_height="wrap_content"
+                android:hint="Samithi"
+                android:id="@+id/samiti"
+                android:layout_gravity="left"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:background="@android:drawable/btn_dropdown"
+                />
+        </LinearLayout>
+    </LinearLayout>
+	
+	--comes in the top---
+	<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Registration Form"
+    android:textAppearance="?android:textAppearanceLarge"
+    android:textStyle="bold"
+    android:layout_gravity="center_horizontal"
+    android:layout_marginTop="10dp"
+    />

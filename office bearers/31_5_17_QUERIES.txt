@@ -1,0 +1,48 @@
+
+	
+	SELECT
+	PD1.*
+	,PD2.*
+	,M_PARAM.Cat_name
+FROM
+	PER_DETAILS AS PD1
+	,PER_DETAILS AS PD2
+	,M_PARAM AS MP1
+	,M_PARAM AS MP2
+	,postdetails AS po1
+	,postdetails AS po2
+WHERE ( MP1.Cat_name like '" & cat & "' )
+	and MP1.Cat_cd=po1.post_held
+	and po1.slno_per_detail=PD1.Sno
+	and MP1.Cat_typ='post'
+	and " & dist & " "	
+	AND PD1.City=PD2.City
+	AND PD2.Sno=po2.slno_per_detail
+	AND MP2.Cat_typ='post'
+	AND MP2.Cat_name LIKE 'SAMITHI CONVENER'
+	AND po2.post_held=MP2.Cat_cd
+	
+	SELECT 	PD1.* 	,PD2.* 	,M_PARAM.Cat_name FROM 	PER_DETAILS AS PD1 	,PER_DETAILS AS PD2 	,M_PARAM AS MP1 	,M_PARAM AS MP2 	,postdetails AS po1 	,postdetails AS po2 WHERE ( MP1.Cat_name like '" & cat & "' ) 	and MP1.Cat_cd=po1.post_held 	and po1.slno_per_detail=PD1.Sno 	and MP1.Cat_typ='post' 	and " & dist & " " 	AND PD1.City=PD2.City 	AND PD2.Sno=po2.slno_per_detail 	AND MP2.Cat_typ='post' 	AND MP2.Cat_name LIKE 'SAMITHI CONVENER' 	AND po2.post_held=MP2.Cat_cd
+	SELECT
+	PD1.*
+	,MP1.Cat_name
+	,PD2.FirstName
+	,MP2.Cat_name
+	
+FROM
+	PER_DETAILS AS PD1
+	,PER_DETAILS AS PD2
+	,M_PARAM AS MP1
+	,M_PARAM AS MP2
+	,postdetails AS po1
+	,postdetails AS po2
+WHERE  MP1.Cat_name LIKE 'DIST. GENTS CO.(SPIRITUAL)' 
+	AND MP1.Cat_cd=po1.post_held
+	AND po1.slno_per_detail=PD1.Sno
+	AND MP1.Cat_typ='post'
+	AND (PD1.state LIKE 'TN%' )
+	AND PD1.City=PD2.City
+	AND PD2.Sno=po2.slno_per_detail
+	AND MP2.Cat_typ='post'
+	AND MP2.Cat_name LIKE 'SAMITHI CONVENER'
+	AND po2.post_held=MP2.Cat_cd

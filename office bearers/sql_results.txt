@@ -1,0 +1,14 @@
+SELECT 	`Cat_typ`, 
+	`Cat_cd`, 
+	`Cat_name`
+	 
+	FROM 
+	`sainetlocal`.`m_param` 
+	WHERE Cat_typ='post' AND Cat_name LIKE '%CONVENOR%'
+	LIMIT 0, 1000;
+
+Cat_typ|Cat_cd|            Cat_name
+   post|   S09|STATE YOUTH CONVENOR
+   post|   S11| STATE EDU. CONVENOR
+
+   
